@@ -8,6 +8,7 @@
 
 @import 'partials/utils';
 @import 'partials/layout';
+@import 'partials/header';
 
 
 $corporateColor: tomato;
@@ -28,108 +29,6 @@ body {
 
 
 
-
-
-
-.brand {
-    padding: 0.5rem 1rem;
-    display: flex;
-
-    .brand_logo {
-        display: flex;
-
-        svg {
-            width: 140px;
-
-            .mail {}
-
-            .name {
-                path {}
-            }
-        }
-    }
-}
-
-.search {
-    display: flex;
-    align-items: center;
-    padding: 0.5rem 1rem;
-
-    .search_input {
-        display: flex;
-        align-items: center;
-        flex-basis: 100%;
-
-        .fa {}
-
-        input {
-            flex-basis: 100%;
-            margin: 0 1rem;
-        }
-    }
-
-    .search_menu {
-        position: relative;
-
-        .search_menu_toggle {
-            .fa {}
-        }
-
-        .search_menu {
-            position: absolute;
-            top: calc(100% + .25rem);
-            right: 0;
-            display: none;
-            background: white;
-
-            .search_menu_items {
-                @include menu_no_bullets;
-                width: 200px;
-
-                .search_menu_item {
-                    a {}
-                }
-            }
-
-            &.opened {
-                display: block;
-            }
-        }
-    }
-}
-
-.navigation {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0.5rem 1rem;
-
-    .navigation_items {
-        @include menu_no_bullets();
-        display: flex;
-        align-items: center;
-
-        .navigation_item {
-            margin-left: 1rem;
-
-            a {
-                .fa {}
-            }
-        }
-    }
-
-    .navigation_user {
-        margin-left: 1rem;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        overflow: hidden;
-
-        img {
-            @include full_image;
-        }
-    }
-}
 
 .new_mail_cta {
     padding: .25rem;

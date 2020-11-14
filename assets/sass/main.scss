@@ -6,6 +6,9 @@
 @import 'lib/keyframes';
 
 
+@import 'partials/typo';
+
+
 @import 'partials/utils';
 @import 'partials/layout';
 @import 'partials/header';
@@ -17,16 +20,6 @@ $corporateColor: tomato;
 * {
     // border: 1px solid $corporateColor;
 }
-
-html,
-body {
-    font-size: $base * 2;
-    font-family: $font_family_base;
-    line-height: $base * 3;
-    color: $body_color;
-    min-height: 100vh;
-}
-
 
 
 

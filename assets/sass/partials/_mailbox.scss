@@ -1,0 +1,51 @@
+
+.mailbox {
+    .mailbox_section {}
+}
+
+
+.menu_mailbox_main_items {
+    @include menu_no_bullets();
+    padding: 1.5rem 0;
+
+    .menu_mailbox_main_item {
+        display: flex;
+        align-items: center;
+        padding: .25rem 1rem .25rem 2rem;
+        width: 80%;
+        margin-bottom: .5rem;
+        border-radius: 0 1rem 1rem 0;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        .icon {
+            .fa {}
+        }
+
+        .label {
+            flex-basis: 100%;
+            margin: 0 1rem;
+        }
+
+        .amount {
+            display: none;
+        }
+
+        &.show_number {
+            .amount {
+                display: block;
+            }
+        }
+        &.active {
+            background: pink;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 1080px) {
+            background: pink;
+            padding: .5rem;
+        }
+    }
+}
